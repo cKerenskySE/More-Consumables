@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>SUPPLY-OreManipulation</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+		[UseLootProfiles:true]
+		[LootProfiles:SUPPLY-OreLight]
+      </Description>
+
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>SUPPLY-OreLight</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Loot]
+	  [ContainerBlockTypes:MyObjectBuilder_CargoContainer/SmallBlockLargeContainer]
+	  [ContainerTypes:CargoLargeMining1A,CargoLargeMining1B]
+      [MinBlocks:1]
+      [MaxBlocks:5]
+      [AppendNameToBlock:true]
+      [AppendedName:(Loot)]
+	  
+      
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
